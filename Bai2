@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<math.h>
+int func(int number){
+    int sum = 0;
+    for(int i = 1; i <= number; i++){
+        sum+=pow(i,2);
+    }
+    printf("S=%d",sum);
+    return 0;
+}
+int main(){
+    int number = 0;
+    printf("Enter number: ");
+    scanf("%d", &number);
+    func(number);
+    return 0;
+}
